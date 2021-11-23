@@ -1,0 +1,66 @@
+/*Import fonts*/
+@font-face {
+    font-family: 'BelledeMai4.0';
+    src: url('BelledeMai40-Regular.woff2') format('woff2'),
+        url('BelledeMai40-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blatant';
+    src: url('BlatantRegular.woff2') format('woff2'),
+        url('BlatantRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Global styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #DEDDDB;
+    margin: 0;
+}
+
+p {
+    margin-top: revert;
+}
+
+.mainContainer {
+    padding: 5%;
+    display: inline-flex;
+}
+
+/*Main page navigation*/
+.navigation {
+    font-family: 'Blatant', sans-serif;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.rightNav {
+    display: inline-block;
+    float: right;
+}
+
+.bottomNav {
+    position: relative;
+    align-content: flex-end;
+}
+
+.rotateNav {
+    transform: rotate(-90deg);
+}
+
+/*Main page header*/
+.nameHeader {
+    font-family: 'BelledeMai4.0', serif;
+    font-size: 150px;
+    text-align: center;
+}

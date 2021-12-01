@@ -18,6 +18,22 @@
 }
 
 /*Global styles*/
+/*Vertical full screen snap*/
+html {
+    scroll-snap-type: y mandatory;
+}
+
+/*Vertical full screen snap for Safari*/
+body {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,9 +48,21 @@ p {
     margin-top: revert;
 }
 
+/*Main page container*/
 .mainContainer {
-    padding: 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
     display: inline-flex;
+}
+
+.projectContainer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 /*Main page navigation*/
@@ -63,4 +91,20 @@ p {
     font-family: 'BelledeMai4.0', serif;
     font-size: 150px;
     text-align: center;
+}
+
+/*Project Overview*/
+.projectTitle {
+    font-family: 'Blatant', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*About*/
+.aboutText {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: 'Blatant', sans-serif;
+    font-size: 20px;
 }

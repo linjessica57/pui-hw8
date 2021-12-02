@@ -1,8 +1,8 @@
 /*Import fonts*/
 @font-face {
     font-family: 'BelledeMai4.0';
-    src: url('BelledeMai40-Regular.woff2') format('woff2'),
-        url('BelledeMai40-Regular.woff') format('woff');
+    src: url('fonts/BelledeMai40-Regular.woff2') format('woff2'),
+        url('fonts/BelledeMai40-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Blatant';
-    src: url('BlatantRegular.woff2') format('woff2'),
-        url('BlatantRegular.woff') format('woff');
+    src: url('fonts/BlatantRegular.woff2') format('woff2'),
+        url('fonts/BlatantRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

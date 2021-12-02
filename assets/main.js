@@ -69,7 +69,6 @@ $(".worksnavbutton").click(function() {
     $('html,body').animate({
         scrollTop: $(".second").offset().top},
         'slow');
-    console.log("ran");
 });
 
 $(".abtnavbutton").click(function() {

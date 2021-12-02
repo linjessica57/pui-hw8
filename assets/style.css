@@ -162,7 +162,7 @@ a:hover {
     text-align: center;
     letter-spacing: 1px;
     padding-top: 2%;
-    padding-bottom: 7%;
+    padding-bottom: 3%;
 }
 
 .projectHeader {
@@ -173,9 +173,10 @@ a:hover {
 .projectText {
     font-family: 'Blatant', sans-serif;
     font-size: 20px;
-    padding-top: 7%;
+    padding-top: 3%;
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 3%;
 }
 
 .centered {
@@ -188,4 +189,8 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+#backbutton {
+    width: 50px;
 }

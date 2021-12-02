@@ -1,7 +1,6 @@
 //p5.js
 function setup() {
   let myCanvas = createCanvas(windowWidth, windowHeight)
-  // createCanvas(windowWidth, windowHeight);
   myCanvas.parent("#p5")
 }
 
@@ -16,8 +15,10 @@ function windowResized() {
 }
 
 function sprayPaint() {
-  // set the color and brush style
+  //set the color and brush style
   colorMode(RGB)
+
+  //pick a random color between three predetermined colors
   let red = color(224, 167, 162)
   let blue = color(86, 129, 179)
   let yellow = color(179, 154, 86)
@@ -30,47 +31,48 @@ function sprayPaint() {
   stroke(displaycolor)
   strokeWeight(1)
 
-  // find the speed of the mouse movement
-  const speed = abs(mouseX - pmouseX) + abs(mouseY - pmouseY)
+  //find the speed of the mouse movement
+  let speed = abs(mouseX - pmouseX) + abs(mouseY - pmouseY)
 
-  // set minimum radius and spray density of spraypaint brush
-  const minRadius = 10;
-  const sprayDensity = 80
+  //set spray density of spraypaint brush
+  let sprayDensity = 90;
   
-  // find radius of the spray paint brush and radius squared
-  const r = 80
-  const rSquared = r * r;
+  //find radius of the spray paint brush and radius squared
+  let r = 90;
+  let rSquared = r * r;
 
-  // set the number of times we lerp the points in the for loop
-  const lerps = 10
+  //set the number of times we lerp the points in the for loop
+  let lerps = 10
 
-  // repeat the random points with lerping
+  //repeat the random points with lerping
   for (let i = 0; i < lerps; i++) {
     
-    // find the lerped X and Y coordinates
-    const lerpX = lerp(mouseX, pmouseX, i / lerps)
-    const lerpY = lerp(mouseY, pmouseY, i / lerps)
+    //find the lerped X and Y coordinates
+    let lerpX = lerp(mouseX, pmouseX, i / lerps)
+    let lerpY = lerp(mouseY, pmouseY, i / lerps)
     
-    // draw a bunch of random points within a circle
+    //draw a bunch of random points within a circle
     for (let j = 0; j < sprayDensity; j++) {
 
-      // pick a random position within the circle
-      const randX = random(-r, r)
-      const randY = random(-1, 1) * sqrt(rSquared - randX * randX)
+      //pick a random position within the circle
+      let randX = random(-r, r)
+      let randY = random(-1, 1) * sqrt(rSquared - randX * randX)
 
-      // draw the random point
+      //draw the random point
       point(lerpX + randX, lerpY + randY)
     }
   }
 }
 
 //jquery
+//click to scroll to work section
 $(".worksnavbutton").click(function() {
     $('html,body').animate({
         scrollTop: $(".second").offset().top},
         'slow');
 });
 
+//click to scroll to about section
 $(".abtnavbutton").click(function() {
     $('html,body').animate({
         scrollTop: $(".third").offset().top},

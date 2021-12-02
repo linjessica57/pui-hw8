@@ -8,57 +8,70 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- JQuery library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+    <script src="assets/main.js" defer></script>
+
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="assets/style.css"> 
 
     <title>JESSICA W. LIN</title>
   </head>
   <body>
+    <div class="first">
     <!-- Section One - Main Page -->
-    <section>
-      <div class="container-fluid mainContainer">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 navigation">work</div>
-          <div class="col-md-6 col-sm-12 navigation">
-            <p class="navigation rightNav rotateNav">about</p>
-          </div>
-          <div class="col-md-12 h-100 d-flex justify-content-center align-items-center nameHeader">JESSICA W. LIN</div>
-          <div class="col-md-6 col-sm-12 navigation">
-            <p class="navigation rotateNav bottomNav">© 2021</p>
-          </div>
-          <div class="col-md-6 col-sm-12 navigation">
-            <p class="navigation rightNav bottomNav">contact</p>
+      <section id="p5">
+        <div class="container-fluid mainContainer">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 navigation worksnavbutton">work</div>
+            <div class="col-md-6 col-sm-12 navigation abtnavbutton">
+              <p class="navigation rightNav rotateNav">about</p>
+            </div>
+            <div class="col-md-12 h-100 d-flex justify-content-center align-items-center nameHeader noselect">JESSICA W. LIN</div>
+            <div class="col-md-6 col-sm-12 navigation">
+              <p class="navigation rotateNav bottomNav noselect">© 2021</p>
+            </div>
+            <div class="col-md-6 col-sm-12 navigation">
+              <p class="navigation rightNav bottomNav noselect"><a href="machineishumanismachine.html">contact</a></p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Section Two - Project Overview Page -->
-    <section>
-      <div class="container-fluid projectContainer">
-        <div class="row">
-          <div class="col-md-12 projectTitle">MACHINE IS HUMAN IS MACHINE</div>
-          <div class="col-md-12 projectTitle">I AM LOST WITHOUT YOU</div>
-          <div class="col-md-12 projectTitle">UNTITLED PHOTO ZINE</div>
+    <div class="second">
+      <section>
+        <div class="container-fluid projectContainer">
+          <div class="row">
+            <div class="col-md-12 projectTitle noselect"><a href="machineishumanismachine.html">MACHINE IS HUMAN IS MACHINE</a></div>
+            <div class="col-md-12 projectTitle noselect">I AM LOST WITHOUT YOU</div>
+            <div class="col-md-12 projectTitle noselect">UNTITLED PHOTO ZINE</div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Section Three - About Page -->
-    <section>
-      <div class="container-fluid projectContainer">
-        <div class="row">
-          <div class="col-md-12 aboutText">i am a multimedia designer at the cross-section of art and design.
+    <div>
+      <section class="third">
+        <div class="container-fluid projectContainer">
+          <div class="row">
+            <div class="col-md-12 aboutText">i am a multimedia designer at the cross-section of art and design. <br><br>
 
-            currently in the master's of human computer interaction program at carnegie mellon university. UCLA-educated, with a B.A. in design | media arts and a minor in entrepreneurship. i create illustrative designs, employ my design sense in product development, and have a passion for point-and-shoot film.
+              currently in the master's of human computer interaction program at carnegie mellon university. UCLA-educated, with a B.A. in design | media arts and a minor in entrepreneurship. i create illustrative designs, employ my design sense in product development, and have a passion for point-and-shoot film. <br><br>
 
-            i am reading "the three-body problem" by cixin liu and my pilea plants are thriving.
+              i am reading "the three-body problem" by cixin liu and my pilea plants are thriving. <br><br>
 
-            read about my experience here
-            and contact me at hello@jessicawlin.com
+              read about my experience here <br>
+              and contact me at hello@jessicawlin.com 
+          </div>
+          </div>
         </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

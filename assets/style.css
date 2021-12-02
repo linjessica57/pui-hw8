@@ -72,6 +72,11 @@ a:hover {
     user-select: none; 
 }
 
+#noclick {
+    text-decoration: none;
+    cursor: default;
+}
+
 /*Main page container*/
 .mainContainer {
     padding-top: 2%;
@@ -95,6 +100,10 @@ a:hover {
     font-family: 'Blatant', sans-serif;
     font-size: 40px;
     display: inline-block;
+}
+
+.navigation:hover {
+    cursor: pointer;
 }
 
 .rightNav {
@@ -172,4 +181,11 @@ a:hover {
 .centered {
     padding-right: 16%;
     padding-left: 16%;
+}
+
+.p5Canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

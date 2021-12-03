@@ -130,9 +130,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/*.abtnavbutton:hover {
-    text-decoration: underline;
-}*/
 
 /*Main page header*/
 .nameHeader {
@@ -155,6 +152,15 @@ a:hover {
     padding-right: 7%;
     font-family: 'Blatant', sans-serif;
     font-size: 20px;
+}
+
+/*Interaction Note*/
+.note {
+    text-align: center;
+    float: center;
+    font-family: 'Blatant', sans-serif;
+    font-size: 15px;
+    font-style: italic;
 }
 
 /*Project Pages*/

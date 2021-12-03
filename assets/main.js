@@ -63,18 +63,3 @@ function sprayPaint() {
     }
   }
 }
-
-//jquery
-//click to scroll to work section
-$(".worksnavbutton").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".second").offset().top},
-        'slow');
-});
-
-//click to scroll to about section
-$(".abtnavbutton").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".third").offset().top},
-        'slow');
-});

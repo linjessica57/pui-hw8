@@ -21,6 +21,7 @@
 /*Vertical full screen snap*/
 html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 /*Vertical full screen snap for Safari*/

@@ -154,15 +154,6 @@ a:hover {
     font-size: 20px;
 }
 
-/*Interaction Note*/
-.note {
-    text-align: center;
-    float: center;
-    font-family: 'Blatant', sans-serif;
-    font-size: 15px;
-    font-style: italic;
-}
-
 /*Project Pages*/
 .projectTitle{
     font-family: 'Blatant', sans-serif;
